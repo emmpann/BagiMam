@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "BagiMam"
 include(":app")
- 
+include(":core")
