@@ -1,4 +1,4 @@
-package com.example.mihu.ui.onboarding
+package com.github.emmpann.bagimam.onboarding
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
