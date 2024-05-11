@@ -8,7 +8,7 @@
     tools:context=".home.HomeFragment">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iv_Profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -18,50 +18,51 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:textColor="#0A6846"
         android:textSize="11sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/iv_Profile"
+        app:layout_constraintTop_toTopOf="@+id/iv_Profile"
         tools:text="29 september 2069" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_condition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#0A6846"
         android:textSize="11sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_Profile"
+        app:layout_constraintStart_toStartOf="@+id/tv_date"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date"
         tools:text="Banjir Bandang" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_greeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:textColor="#0A6846"
         android:textSize="32sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/iv_Profile"
+        app:layout_constraintTop_toBottomOf="@+id/iv_Profile"
         tools:text="Hi, Spongebob" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv_greeting2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#0A6846"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/tv_greeting"
+        app:layout_constraintTop_toBottomOf="@+id/tv_greeting"
         tools:text="Happy a nice day asu" />
 
     <ImageView
+        android:id="@+id/iv_setting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -79,11 +80,11 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/tv_greeting2"
         tools:listitem="@layout/rv_item" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tv_donation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -115,10 +116,10 @@
         android:background="@drawable/card_rounded"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5">
+        app:layout_constraintTop_toBottomOf="@+id/tv_donation">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/outlinedTextField"
+            android:id="@+id/tf_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
@@ -135,7 +136,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/outlinedTextField2"
+            android:id="@+id/tf_methode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
@@ -143,7 +144,7 @@
             android:hint="Metode"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/outlinedTextField">
+            app:layout_constraintTop_toBottomOf="@id/tf_name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -152,15 +153,15 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/outlinedTextField3"
+            android:id="@+id/tf_nominal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="32dp"
             android:hint="Nominal"
-            app:layout_constraintEnd_toEndOf="@+id/outlinedTextField2"
-            app:layout_constraintStart_toStartOf="@+id/outlinedTextField2"
-            app:layout_constraintTop_toBottomOf="@id/outlinedTextField2">
+            app:layout_constraintEnd_toEndOf="@+id/tf_methode"
+            app:layout_constraintStart_toStartOf="@+id/tf_methode"
+            app:layout_constraintTop_toBottomOf="@id/tf_methode">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -178,7 +179,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/outlinedTextField3" />
+            app:layout_constraintTop_toBottomOf="@+id/tf_nominal" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
