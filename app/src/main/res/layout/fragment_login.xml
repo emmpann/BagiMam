@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F6E9B2"
-    tools:context=".register.RegisterFragment">
+    tools:context=".login.LoginFragment">
 
     <ImageView
         android:id="@+id/iv_register"
@@ -29,6 +29,7 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_register">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:inputType="textEmailAddress"
             android:layout_height="wrap_content" />
@@ -45,6 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/signInEmail">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:inputType="textPassword"
             android:layout_height="wrap_content" />
@@ -52,7 +54,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btn_signup"
+        android:id="@+id/btn_signin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -64,12 +66,35 @@
         app:layout_constraintTop_toBottomOf="@+id/signInPassword" />
 
     <Button
+        android:id="@+id/btn_signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        android:text="Sign in with Google"
+        android:backgroundTint="#0A6846"
+        android:text="Sign up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signin" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
         android:backgroundTint="#DB4437"
+        android:text="Sign in with Google"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_signup" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:visibility="visible" />
 </androidx.constraintlayout.widget.ConstraintLayout>

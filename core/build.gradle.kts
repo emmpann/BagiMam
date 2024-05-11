@@ -1,9 +1,9 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id("com.google.gms.google-services")
+//    id("com.google.gms.google-services")
     id("kotlin-parcelize")
-    id("kotlin-kapt")
+//    id("kotlin-kapt")
 }
 apply(from = "../shared_dependencies.gradle")
 
@@ -42,4 +42,5 @@ android {
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     implementation("com.google.firebase:firebase-auth-ktx:23.0.0")
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
 }

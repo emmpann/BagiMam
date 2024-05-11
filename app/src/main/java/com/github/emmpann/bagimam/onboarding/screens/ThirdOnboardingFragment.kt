@@ -20,7 +20,7 @@ class ThirdOnboardingFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_third_onboarding, container, false)
         val btnFinish: TextView = view.findViewById(R.id.tv_start)
         btnFinish.setOnClickListener {
-            findNavController().navigate(R.id.action_viewPagerFragment_to_homeActivity)
+//            findNavController().navigate(R.id.action_viewPagerFragment_to_homeActivity)
             onBoardingFinished()
         }
 

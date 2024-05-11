@@ -43,10 +43,11 @@ android {
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     implementation(project(":core"))
-    implementation("com.google.firebase:firebase-auth:23.0.0")
-    implementation("com.google.firebase:firebase-auth-ktx:23.0.0")
+//    implementation("com.google.firebase:firebase-auth:23.0.0")
+//    implementation("com.google.firebase:firebase-auth-ktx:23.0.0")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
 
     //ViewPager
     implementation ("androidx.viewpager2:viewpager2:1.0.0")
