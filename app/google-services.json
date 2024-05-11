@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "601245348763",
+    "project_id": "bagimam-5c176",
+    "storage_bucket": "bagimam-5c176.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601245348763:android:85a59b6b00d753c5ac273e",
+        "android_client_info": {
+          "package_name": "com.github.emmpann.bagimam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD26zOWyPU5PxeOaxdgPiv-R62DgupDxcQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
