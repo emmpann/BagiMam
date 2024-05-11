@@ -1,4 +1,4 @@
-package com.example.mihu.ui.onboarding
+package com.github.emmpann.bagimam.onboarding
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
-import com.example.mihu.R
-import com.example.mihu.ui.onboarding.screens.FirstOnboardingFragment
-import com.example.mihu.ui.onboarding.screens.SecondOnboardingFragment
-import com.example.mihu.ui.onboarding.screens.ThirdOnboardingFragment
+import com.github.emmpann.bagimam.onboarding.screens.FirstOnboardingFragment
+import com.github.emmpann.bagimam.onboarding.screens.SecondOnboardingFragment
+import com.github.emmpann.bagimam.onboarding.screens.ThirdOnboardingFragment
+import com.github.emmpann.bagimam.R
 
 
 class ViewPagerFragment : Fragment() {

@@ -6,7 +6,7 @@
     app:startDestination="@id/splashFragment">
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.example.mihu.ui.splash.SplashFragment"
+        android:name="com.github.emmpann.bagimam.splash.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -19,9 +19,6 @@
             app:destination="@id/homeActivity"
             app:popUpTo="@id/splashFragment"
             app:popUpToInclusive="true" />
-        <action
-            android:id="@+id/action_splashFragment_to_homeWorkerActivity"
-            app:destination="@id/homeWorkerActivity" />
     </fragment>
     <fragment
         android:id="@+id/viewPagerFragment"
@@ -39,9 +36,4 @@
         android:name="com.example.mihu.ui.home.HomeActivity"
         android:label="activity_home"
         tools:layout="@layout/activity_home" />
-    <activity
-        android:id="@+id/homeWorkerActivity"
-        android:name="com.example.mihu.ui.worker.home.HomeWorkerActivity"
-        android:label="activity_home_worker"
-        tools:layout="@layout/activity_home_worker" />
 </navigation>

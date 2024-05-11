@@ -2,4 +2,25 @@
     <string name="app_name">BagiMam</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cd_onboarding_1">img_onboarding</string>
+    <string name="cd_indicator_1_active">cd_indicator_1_active</string>
+    <string name="cd_indicator_2_disable">cd_indicator_2_disable</string>
+    <string name="cd_indicator_3_disable">cd_indicator_3_disable</string>
+    <string name="cd_indicator_4_disable">cd_indicator_4_disable</string>
+    <string name="onboarding_titles_1">Welcome To BagiMam</string>
+    <string name="onboarding_desc_1">We re thrilled to have you join our community of helpful individuals and seekers of assistance. BagiMam is your go-to platform for connecting with skilled people who can lend a hand with various tasks.</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="cd_indicator_1_disable">cd_indicator_1_disable</string>
+    <string name="onboarding_desc_4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="start">Start</string>
+    <string name="cd_onboarding_2">cd_onboarding_2</string>
+    <string name="cd_indicator_2_active">cd_indicator_2_active</string>
+    <string name="onboarding_titles_2">Search for Service</string>
+    <string name="onboarding_desc_2">Use our intuitive search feature to find people with the skills youre looking for. Filter results based on location, availability, and user reviews to connect with the right person for the job.  </string>
+    <string name="cd_onboarding_3">cd_onboarding_3</string>
+    <string name="cd_indicator_3_active">cd_indicator_3_active</string>
+    <string name="onboarding_titles_3">You are Ready!</string>
+    <string name="onboarding_desc_3">Once you find a potential match, initiate a chat to discuss the details of the task. Clear communication is key to a successful collaboration..</string>
+    <string name="ic_logo">BagimamLogo\n</string>
 </resources>
