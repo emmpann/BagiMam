@@ -4,7 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="MainColor">#F6E9B2</color>
     <color name="SecondColor">#F3CB52</color>
-    F3CB52
+    <color name="ThirdColor">#0A6846</color>
     <color name="grey">#C4C4C4</color>
     <color name="grey_1">#959595</color>
     <color name="baby_blue">#88CCF1</color>
