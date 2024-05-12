@@ -8,14 +8,37 @@
     tools:context=".login.LoginFragment">
 
     <ImageView
-        android:id="@+id/iv_register"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginTop="64dp"
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/tv_rounded"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BagiMam"
+        android:textColor="#0A6846"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/iv_register"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/signInEmail"
@@ -31,8 +54,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_email"
             android:layout_width="match_parent"
-            android:inputType="textEmailAddress"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -48,8 +71,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_password"
             android:layout_width="match_parent"
-            android:inputType="textPassword"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -65,27 +88,76 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signInPassword" />
 
-    <Button
+
+    <TextView
+        android:id="@+id/tv_dontAcc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Dont have an account?"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/btn_signin"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signin"
+        tools:alpha="100" />
+
+    <TextView
         android:id="@+id/btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Sign Up"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_dontAcc"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signin" />
+
+    <LinearLayout
+        android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:backgroundTint="#0A6846"
-        android:text="Sign up"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_signin" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_signup">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="8dp"
+            android:gravity="center"
+            android:text="or"
+            android:textColor="@android:color/black" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#DB4437"
+        android:drawablePadding="8dp"
         android:text="Sign in with Google"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_signup" />
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
 
     <ProgressBar
         android:id="@+id/progress_bar"
