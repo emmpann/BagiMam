@@ -4,22 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="onboarding.screens.SecondOnboardingFragment"
     android:background="@color/MainColor"
-    >
+    tools:context="onboarding.screens.SecondOnboardingFragment">
 
     <ImageView
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_above="@+id/constraint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/constraint"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="10dp"
         android:contentDescription="@string/cd_onboarding_2"
-        android:layout_gravity="center"
         android:src="@drawable/ic_search_3d" />
 
     <androidx.constraintlayout.widget.ConstraintLayout

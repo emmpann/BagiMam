@@ -58,7 +58,6 @@ class LoginFragment : Fragment() {
                         etPassword.text?.clear()
                     }
                     viewModel.setSession(User("", "", 0, "", "token-1"))
-//                    findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
                 }
 
                 is Response.Failure -> {
