@@ -3,6 +3,7 @@ package com.github.emmpann.bagimam.di
 
 import com.github.emmpann.bagimam.MainViewModel
 import com.github.emmpann.bagimam.donation.DonationViewModel
+import com.github.emmpann.bagimam.home.HomeViewModel
 import com.github.emmpann.bagimam.login.LoginViewModel
 import com.github.emmpann.bagimam.onboarding.OnBoardingViewModel
 import com.github.emmpann.bagimam.profile.ProfileViewModel
@@ -16,5 +17,6 @@ val viewModelModule = module {
     viewModel { MainViewModel(get()) }
     viewModel { OnBoardingViewModel(get()) }
     viewModel { ProfileViewModel(get()) }
-    viewModel { DonationViewModel() }
+    viewModel { DonationViewModel(get()) }
+    viewModel { HomeViewModel(get()) }
 }

@@ -29,7 +29,7 @@ class AuthRepositoryImpl constructor(private val auth: FirebaseAuth) : AuthRepos
             auth.createUserWithEmailAndPassword(email, password).await()
             emit(Success(true))
         } catch (e: Exception) {
-            emit(Failure(e))
+            emit(Failure(e?.message ?: e.toString()))
         }
     }.onStart {
         emit(Loading)
@@ -47,7 +47,7 @@ class AuthRepositoryImpl constructor(private val auth: FirebaseAuth) : AuthRepos
             auth.signInWithEmailAndPassword(email, password).await()
             emit(Success(true))
         } catch (e: Exception) {
-            emit(Failure(e))
+            emit(Failure(e?.message ?: e.toString()))
         }
     }.onStart {
         emit(Loading)

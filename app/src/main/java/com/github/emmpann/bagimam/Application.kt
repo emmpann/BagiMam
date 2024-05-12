@@ -2,6 +2,7 @@ package com.github.emmpann.bagimam
 
 import android.app.Application
 import com.github.emmpann.bagimam.di.viewModelModule
+import com.github.emmpann.core.di.db
 import com.github.emmpann.core.di.preferencesManager
 import com.github.emmpann.core.di.repositoryModule
 import org.koin.android.ext.koin.androidContext
@@ -20,7 +21,8 @@ class Application : Application() {
                 listOf(
                     repositoryModule,
                     viewModelModule,
-                    preferencesManager
+                    preferencesManager,
+                    db
                 )
             )
         }

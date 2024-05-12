@@ -49,7 +49,7 @@ class RegisterFragment : Fragment() {
         viewModel.signUpResponse.observe(viewLifecycleOwner) {
             when (it) {
                 is Response.Success -> {
-                    showLoading(true)
+                    showLoading(false)
                     showSuccessDialog(it.toString())
                     with(binding) {
                         etEmail.text?.clear()
@@ -59,20 +59,19 @@ class RegisterFragment : Fragment() {
                 }
 
                 is Response.Failure -> {
-                    showLoading(true)
-                    showErrorDialog(it.e.message.toString())
+                    showLoading(false)
+                    showErrorDialog(it.message)
                 }
 
                 is Response.Loading -> {
-                    showLoading(false)
+                    showLoading(true)
                 }
             }
         }
     }
 
     private fun showLoading(isShow: Boolean) {
-        binding.progressBar.visibility = if (isShow) View.GONE else View.VISIBLE
-//        binding.btnSignup.visibility = if (isShow) View.VISIBLE else View.GONE
+        binding.progressBar.visibility = if (isShow) View.VISIBLE else View.GONE
     }
 
     private fun showSuccessDialog(message: String) {
