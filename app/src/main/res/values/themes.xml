@@ -8,6 +8,14 @@
 
     <style name="Theme.BagiMam" parent="Base.Theme.BagiMam" />
 
+    <style name="ProfileRounded">
+        <item name="android:layout_height">435dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/profile_shape</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:padding">30dp</item>
+    </style>
+
     <style name="OnBoardingDescBG">
         <item name="android:layout_height">435dp</item>
         <item name="android:layout_width">match_parent</item>

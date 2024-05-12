@@ -23,4 +23,10 @@
     <string name="onboarding_titles_3">You are Ready!</string>
     <string name="onboarding_desc_3">Once you find a potential match, initiate a chat to discuss the details of the task. Clear communication is key to a successful collaboration..</string>
     <string name="ic_logo">BagimamLogo\n</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="account_setting">   Account Setting   </string>
+    <string name="personal_info">   Personal Info   </string>
+    <string name="log_out">   Log Out   </string>
+    <string name="copyright">© PT. BagiMam Sejahtera</string>
 </resources>
