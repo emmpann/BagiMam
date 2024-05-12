@@ -48,6 +48,10 @@ class MainActivity : AppCompatActivity() {
                     binding.navView.visibility = View.VISIBLE
                 }
 
+                R.id.donationFragment -> {
+                    binding.navView.visibility = View.VISIBLE
+                }
+
                 else -> {
                     binding.navView.visibility = View.GONE
                 }

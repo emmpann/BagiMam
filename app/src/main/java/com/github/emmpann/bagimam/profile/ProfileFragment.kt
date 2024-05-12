@@ -5,12 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import com.github.emmpann.bagimam.databinding.FragmentProfileBinding
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class ProfileFragment : Fragment() {
 
-    private lateinit var viewModel: ProfileViewModel
+    private val viewModel: ProfileViewModel by viewModel()
     private lateinit var binding: FragmentProfileBinding
 
     override fun onCreateView(
@@ -25,8 +25,6 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
-
         setupViews()
         setupListeners()
     }
@@ -39,6 +37,5 @@ class ProfileFragment : Fragment() {
         binding.tvLogOut.setOnClickListener {
             viewModel.logout()
         }
-
     }
 }

@@ -51,4 +51,8 @@
             android:id="@+id/action_profileFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/donationFragment"
+        android:name="com.github.emmpann.bagimam.donation.DonationFragment"
+        android:label="DonationFragment" />
 </navigation>
