@@ -7,15 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.github.emmpann.bagimam.R
 import com.github.emmpann.bagimam.databinding.FragmentDonationBinding
 import com.github.emmpann.core.domain.model.Orphanage
 import com.github.emmpann.core.domain.model.Response
 import com.github.emmpann.core.ui.DonationAdapter
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class DonationFragment : Fragment() {
@@ -58,6 +53,9 @@ class DonationFragment : Fragment() {
                 is Response.Failure -> {
                     showLoading(false)
                 }
+                else ->{
+
+                }
             }
         }
     }
@@ -69,10 +67,10 @@ class DonationFragment : Fragment() {
         binding.rvList.adapter = donationAdapter
         donationAdapter.setOnItemClickCallback(object : DonationAdapter.OnItemClickCallback {
             override fun onItemClicked(orphanage: Orphanage) {
-//                val toDetailArticle =
-//                    HomeFragmentDirections.actionHomeFragmentToDetailArticleFragment()
-//                toDetailArticle.articleSlug = article.slug
-//                findNavController().navigate(toDetailArticle)
+                val toDetailDonation =
+                    DonationFragmentDirections.actionDonationFragmentToDetailFragment()
+                toDetailDonation.name = orphanage.name
+                findNavController().navigate(toDetailDonation)
             }
         })
 

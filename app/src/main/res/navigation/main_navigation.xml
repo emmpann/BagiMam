@@ -54,5 +54,20 @@
     <fragment
         android:id="@+id/donationFragment"
         android:name="com.github.emmpann.bagimam.donation.DonationFragment"
-        android:label="DonationFragment" />
+        android:label="DonationFragment" >
+        <action
+            android:id="@+id/action_donationFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.github.emmpann.bagimam.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Yayasan" />
+    </fragment>
 </navigation>
