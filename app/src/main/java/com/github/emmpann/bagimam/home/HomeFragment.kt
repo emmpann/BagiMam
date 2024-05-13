@@ -49,11 +49,6 @@ class HomeFragment : Fragment() {
         setupObserver()
         setupRecyclerView()
 
-        // Set click listener for iv_Profile if it's found
-        binding.ivProfile?.setOnClickListener {
-            // Navigate to ProfileFragment
-            findNavController().navigate(R.id.action_homeFragment_to_profileFragment)
-        }
 
         // Initialize ViewPager
         viewPager = binding.viewPager
