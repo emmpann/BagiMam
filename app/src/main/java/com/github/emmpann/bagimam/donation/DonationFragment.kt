@@ -73,29 +73,6 @@ class DonationFragment : Fragment() {
                 findNavController().navigate(toDetailDonation)
             }
         })
-
-//        binding.rvToday.layoutManager =
-//        LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-//        bannerAdapter = BannerAdapter()
-//        binding.rvToday.adapter = bannerAdapter
-//        bannerAdapter.setOnItemClickCallback(object : BannerAdapter.OnItemClickCallback {
-//            override fun onItemClicked(article: Article) {
-//                val toDetailArticle =
-//                    HomeFragmentDirections.actionHomeFragmentToDetailArticleFragment()
-//                toDetailArticle.articleSlug = article.slug
-//                findNavController().navigate(toDetailArticle)
-//            }
-//        })
-//
-//        autoScrollJob = CoroutineScope(Dispatchers.Main).launch {
-//            while (true) {
-//                delay(delay)
-//                if (currentPosition == bannerAdapter.itemCount) {
-//                    currentPosition = 0
-//                }
-//                binding.rvToday.smoothScrollToPosition(++currentPosition)
-//            }
-//        }
     }
 
     private fun showLoading(isShow: Boolean) {

@@ -30,7 +30,10 @@ class ProfileFragment : Fragment() {
     }
 
     private fun setupViews() {
-        // Set up views here
+        viewModel.currentEmail.observe(viewLifecycleOwner) {
+            binding.tvName.text = "Spongebob"
+            binding.tvEmail.text = it
+        }
     }
 
     private fun setupListeners() {

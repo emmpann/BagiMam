@@ -71,10 +71,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint"
         style="@style/ProfileRounded"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        app:layout_constraintVertical_bias="0.22000003"
         tools:ignore="TextSizeCheck">
 
         <TextView

@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.github.emmpann.core.databinding.DonationItemBinding
+import com.github.emmpann.core.databinding.TipsItemBinding
 import com.github.emmpann.core.domain.model.Orphanage
 
 class DonationAdapter : RecyclerView.Adapter<DonationAdapter.ViewHolder>() {
@@ -26,20 +26,20 @@ class DonationAdapter : RecyclerView.Adapter<DonationAdapter.ViewHolder>() {
         if (listOrphanage.size > 1) notifyItemRangeChanged(0, listOrphanage.lastIndex) else notifyItemInserted(0)
     }
 
-    inner class ViewHolder(private val binding: DonationItemBinding) :
+    inner class ViewHolder(private val binding: TipsItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(orphanage: Orphanage) {
             with(binding) {
-                tvPantiTitle.text = orphanage.name
+                tvItemName.text = orphanage.name
                 Glide.with(binding.root.context)
                     .load(orphanage.thumbnail)
-                    .into(ivPanti)
+                    .into(ivAvatar)
             }
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = DonationItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = TipsItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 

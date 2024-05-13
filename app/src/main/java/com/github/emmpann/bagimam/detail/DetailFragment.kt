@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.github.emmpann.bagimam.R
 import com.github.emmpann.bagimam.databinding.FragmentDetailBinding
 import com.github.emmpann.core.domain.model.Donatur
 import com.github.emmpann.core.utils.Event
@@ -39,6 +41,10 @@ class DetailFragment : Fragment() {
 
         viewModel.message.observe(viewLifecycleOwner) {
             listenStatus(it)
+        }
+
+        binding.ivBack.setOnClickListener {
+            findNavController().popBackStack()
         }
     }
 

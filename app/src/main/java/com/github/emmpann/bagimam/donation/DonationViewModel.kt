@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.github.emmpann.core.domain.model.Orphanage
 import com.github.emmpann.core.domain.model.Response
+import com.github.emmpann.core.domain.repository.DonationRepository
 import com.github.emmpann.core.domain.repository.OrphanageRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

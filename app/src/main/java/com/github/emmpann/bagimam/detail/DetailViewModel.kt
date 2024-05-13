@@ -34,6 +34,4 @@ class DetailViewModel(
             }
         }
     }
-
-    val currentEmail: LiveData<String> = preferencesManager.getName().asLiveData()
 }

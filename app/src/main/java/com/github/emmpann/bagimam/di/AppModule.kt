@@ -20,4 +20,5 @@ val viewModelModule = module {
     viewModel { ProfileViewModel(get()) }
     viewModel { DonationViewModel(get()) }
     viewModel { DetailViewModel(get(), get()) }
+    viewModel { HomeViewModel(get()) }
 }

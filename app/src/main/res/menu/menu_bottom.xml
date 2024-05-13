@@ -7,12 +7,12 @@
         android:title="Home" />
 
     <item
-        android:id="@+id/scanFragment"
-        android:icon="@drawable/scan"
-        android:title="Scan" />
-
-    <item
         android:id="@+id/donationFragment"
         android:icon="@drawable/organization_list"
         android:title="Berbagi" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_user_profile"
+        android:title="Profile" />
 </menu>
