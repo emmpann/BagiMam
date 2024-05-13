@@ -37,7 +37,7 @@
             android:layout_marginEnd="8dp"
             android:maxLines="2"
             android:text="URGENT! Butuh Bantuan Makan Minum Segera"
-            android:textColor="#0A6846"
+            android:textColor="@color/ThirdColor"
             android:textSize="16sp"
             android:textStyle="bold"
             card_view:layout_constraintEnd_toEndOf="parent"
@@ -50,6 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
+            android:src="@drawable/ic_location"
             card_view:layout_constraintStart_toEndOf="@+id/ivAvatar"
             card_view:layout_constraintTop_toBottomOf="@+id/tv_item_name" />
 
@@ -62,7 +63,7 @@
             android:layout_marginEnd="8dp"
             android:maxLines="1"
             android:text="Palembang"
-            android:textColor="#0A6846"
+            android:textColor="@color/ThirdColor"
             android:textSize="16sp"
             card_view:layout_constraintBottom_toBottomOf="@+id/imageView2"
             card_view:layout_constraintEnd_toEndOf="parent"
@@ -76,7 +77,7 @@
             android:layout_marginEnd="8dp"
             android:maxLines="1"
             android:text="Sisa Hari"
-            android:textColor="#0A6846"
+            android:textColor="@color/ThirdColor"
             android:textSize="8sp"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintTop_toBottomOf="@+id/tv_item_description" />
@@ -88,7 +89,7 @@
             android:layout_marginTop="8dp"
             android:maxLines="1"
             android:text="60"
-            android:textColor="#0A6846"
+            android:textColor="@color/ThirdColor"
             android:textSize="12sp"
             android:textStyle="bold"
             card_view:layout_constraintEnd_toEndOf="@+id/tv_days_left"
