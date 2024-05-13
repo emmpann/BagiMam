@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
-            android:text="Hi, Spongebob"
+            android:text="Hi, Dev"
             android:textColor="#0A6846"
             android:textSize="32sp"
             android:textStyle="bold"
