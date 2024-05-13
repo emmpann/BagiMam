@@ -25,7 +25,7 @@ class DetailViewModel(
 
     fun sendDonate(donatur: Donatur) {
         viewModelScope.launch(Dispatchers.IO) {
-            donationRepository.sendDonation(donatur).collect { response ->
+            donationRepository. sendDonation(donatur).collect { response ->
                 when (response) {
                     is Response.Success -> _message.postValue(Event(true))
                     is Response.Failure -> _message.postValue(Event(false))

@@ -32,7 +32,7 @@ class DetailFragment : Fragment() {
 
         binding.btnOrder.setOnClickListener {
             val donatur =
-                Donatur("1", "tes@dev.com", binding.etJenismakanan.toString())
+                Donatur("1", "tes@dev.com", binding.etJenismakanan.text.toString())
 
             viewModel.sendDonate(donatur)
         }

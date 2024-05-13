@@ -12,6 +12,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 
 class DonationRepositoryImpl(private val db: FirebaseFirestore) : DonationRepository {
+    private val collection = db.collection("donatur")
 
     override suspend fun sendDonation(donatur: Donatur): Flow<Response<Void?>> = flow {
         try {
@@ -23,7 +24,7 @@ class DonationRepositoryImpl(private val db: FirebaseFirestore) : DonationReposi
                 "address" to donatur.address,
             )
 
-            val newDonatur = db.document(donatur.id).set(data).await()
+            val newDonatur = collection.document(donatur.id).set(data).await()
             emit(Response.Success(newDonatur))
         } catch (e: Exception) {
             emit(Response.Failure(e.message ?: e.toString()))
