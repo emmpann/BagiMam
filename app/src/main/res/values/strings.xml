@@ -29,4 +29,8 @@
     <string name="personal_info">   Personal Info   </string>
     <string name="log_out">   Log Out   </string>
     <string name="copyright">© PT. BagiMam Sejahtera</string>
+    <string name="Services" />
+    <string name="yayasan">Yayasan Zidan Imut</string>
+    <string name="jenismakanan">Jenis Makanan</string>
+    <string name="title_order">Berbagi!</string>
 </resources>

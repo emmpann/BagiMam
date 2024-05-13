@@ -18,5 +18,4 @@ val viewModelModule = module {
     viewModel { OnBoardingViewModel(get()) }
     viewModel { ProfileViewModel(get()) }
     viewModel { DonationViewModel(get()) }
-    viewModel { HomeViewModel(get()) }
 }
