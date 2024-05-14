@@ -31,8 +31,6 @@ class ProfileFragment : Fragment() {
 
     private fun setupViews() {
         viewModel.currentEmail.observe(viewLifecycleOwner) {
-            binding.tvName.text = "Spongebob"
-            binding.tvEmail.text = it
         }
     }
 

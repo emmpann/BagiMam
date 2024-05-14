@@ -3,16 +3,16 @@
     <item
         android:id="@+id/homeFragment"
         android:checked="true"
-        android:icon="@drawable/home"
+        android:icon="@drawable/baseline_home_24"
         android:title="Home" />
 
     <item
         android:id="@+id/donationFragment"
-        android:icon="@drawable/organization_list"
+        android:icon="@drawable/baseline_list_24"
         android:title="Berbagi" />
 
     <item
         android:id="@+id/profileFragment"
-        android:icon="@drawable/ic_user_profile"
+        android:icon="@drawable/baseline_perm_identity_24"
         android:title="Profile" />
 </menu>

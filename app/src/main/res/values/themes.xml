@@ -2,14 +2,15 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.BagiMam" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="fontFamily">@font/mulish</item>
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">#80000000</item> <!-- Warna abu-abu transparan -->
+        <!-- Menggunakan colorBackground -->
+
     </style>
 
     <style name="Theme.BagiMam" parent="Base.Theme.BagiMam" />
 
     <style name="ProfileRounded">
-        <item name="android:layout_height">435dp</item>
+        <item name="android:layout_height">580dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:background">@drawable/profile_shape</item>
         <item name="android:layout_alignParentBottom">true</item>
